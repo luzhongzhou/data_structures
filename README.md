@@ -1,1 +1,1 @@
-#data structres in c.
+#data structures in c.
