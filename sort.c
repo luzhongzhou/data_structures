@@ -8,7 +8,6 @@ void printArray(int a[], int n){
 }
 
 //O(n*n)
-//void insertSort(int (*p)[], int n);
 void insertSort(int a[], int n){
 	int i, j, temp;
 	for(j = 1; j < n; j++){
