@@ -6,10 +6,11 @@ void printArray(int a[], int n){
 	for(i=0;i<n;i++) printf("%d ", a[i]);
 	printf("\n");
 }
+
 //O(n*n)
+//void insertSort(int (*p)[], int n);
 void insertSort(int a[], int n){
 	int i, j, temp;
-	if(n < 2) return;
 	for(j = 1; j < n; j++){
 		temp = a[j];
 		i = j-1;
