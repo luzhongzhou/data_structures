@@ -1,1 +1,1 @@
-#data structures in c.
+#Data Structures and Algorithm Analysis in c Second Edition.
