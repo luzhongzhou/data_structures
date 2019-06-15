@@ -1,14 +1,18 @@
 #include <stdio.h>
 
+void swap(int *a, int *b){
+    int tmp = *a;
+    *a = *b;
+    *b = tmp;
+}
+
 void bubbleSort(int *a, int n){
 	int i, j;
 	int temp;
-	for(i=n-1; i>0; i--){
-		for(j=0; j<i; j++){
-			if(a[j]>a[j+1]){
-				temp = a[j];
-				a[j] = a[j+1];
-				a[j+1] = temp;
+	for(i=0; i<n; i++){
+		for(j=i+1; j<n; j++){
+			if(a[j]<a[i]){
+				swap(&a[i], &a[j]);
 			}
 		}
 	}
